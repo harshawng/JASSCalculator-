@@ -1,0 +1,198 @@
+<!Doctype html>  
+<html>  
+<head>  
+<title>Javascript Calculator</title>  
+<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CDN, or contact delivery network -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="120x120" href="logo.png">
+
+</head>  
+<body>  
+<h1>  
+Javascript Calculator</h1>  
+<div class="calbody">  
+<form name="lcdform">    
+<input id="output" name="lcds" type="text" value="" />  
+</form>
+    <!-- calculator body -->  
+<div id="buttons"> 
+<button id="clr" onclick="AC();">AC</button> 
+    <button  id="mystry" onclick="sqroot();" class="jean">  <img id="logo" src="jean%20.png" />  </button>
+
+    <button class="btn btn-warning" id="operationmult" onclick="multiply();">×</button>
+
+<button id="num7" onclick="seven();">7</button>  
+<button id="num8" onclick="eight();">8</button>  
+<button id="num9" onclick="nine();">9</button>
+<button class="btn btn-warning" id="operationminus" onclick="subtract();">-</button>   
+    
+<button id="num4" onclick="four();">4</button>  
+<button id="num5" onclick="five();">5</button>  
+<button id="num6" onclick="six();">6</button>
+ <button class="btn btn-warning" id="operationplus" onclick="add();">+</button>
+    
+<button id="num1" onclick="one();">1</button>  
+<button id="num2" onclick="two();">2</button>  
+<button id="num3" onclick="three();">3</button>
+
+    <button class="btn btn-warning" id="operationdivid" onclick="divide();">÷</button> 
+<button id="num0" onclick="zero();">0</button>
+    
+    
+ <button id="operationraistop" onclick="decimal();">.</button> 
+    <button class="btn btn-danger" id="submit" onclick="equals();">=</button>  
+
+
+    
+    <h5>  © 2018 Harshawn Grewal</h5>
+    
+</div>  
+</div>  
+<!-- Javascript code -->  
+    
+    <script>
+   
+var reset = true; // result allows for the screen to appear both numbers and function//
+function zero() {
+	if (reset) {
+		document.getElementById("output").value = "0";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "0";
+	}
+}
+function one() {
+	if (reset) {
+		document.getElementById("output").value = "1";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "1";
+	}
+}
+function two() {
+	if (reset) {
+		document.getElementById("output").value = "2";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "2";
+	}
+}
+function three() {
+	if (reset) {
+		document.getElementById("output").value = "3";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "3";
+	}
+}
+function four() {
+	if (reset) {
+		document.getElementById("output").value = "4";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "4";
+	}
+}
+function five() {
+	if (reset) {
+		document.getElementById("output").value = "5";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "5";
+	}
+}
+function six() {
+	if (reset) {
+		document.getElementById("output").value = "6";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "6";
+	}
+}
+function seven() {
+	if (reset) {
+		document.getElementById("output").value = "7";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "7";
+	}
+}
+function eight() {
+	if (reset) {
+		document.getElementById("output").value = "8";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "8";
+	}
+}
+function nine() {
+	if (reset) {
+		document.getElementById("output").value = "9";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += "9";
+	}
+}
+function decimal() {
+	if (reset) {
+		document.getElementById("output").value = ".";
+		reset = false;
+	}
+	else {
+		document.getElementById("output").value += ".";
+	}
+}
+function AC() {
+	document.getElementById("output").value = "0";
+	reset = true;
+}
+
+function add() {
+	document.getElementById("output").value += "+";
+	reset = false;
+}
+function subtract() {
+	document.getElementById("output").value += "-";
+	reset = false;
+}
+function multiply() {
+	document.getElementById("output").value += "*";     
+    reset = false;
+}
+function divide() {
+	document.getElementById("output").value += "/";  
+	reset = false;
+}
+function equals() {
+	var result = eval(document.getElementById("output").value); //eval calculates operation//
+	document.getElementById("output").value = result;
+	reset = true;
+}
+        function sqroot(){
+         var result = (document.getElementById("output").value);  // mystery function //
+	document.getElementById("output").value = result*result;
+	reset = true;   
+            
+        }
+
+    </script>
+    </body>
+</html>
+
