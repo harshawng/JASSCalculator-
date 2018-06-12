@@ -1,36 +1,45 @@
-<!-- CSS Code -->
-<!-- responsive for iphone -->
-
-body {  
-background-color:blue;  
-margin: 0px auto;  
+!-- CSS --> 
+body{  
+background: #5cb85c;  
   
-}  
-.calbody{  
- background: gray;  
- border: 1px solid orange;  
+  
+} 
+
+.calbody{   
  padding: 10px;
  min-width: 27em;  
  max-width: 27em; 
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
+ 
+ 
+}
+ 
+
+
+h5{  
+ text-align: center;  
+ 
  
    
 }  
-h1{  
- text-align: center;  
- font-size: 40px;  
- color: #003652;  
+
+h6{
+    text-align: right;
+}
+
+#output{  
+ color: grey;  
+ text-align: right;  
+ width: 23.4em;  
+ height: 50px;  
+ font-size: 15px;  
    
 }  
 
-h5{
-    text-align: right;
-}
-   
-  
-#output{  
+#result{  
  color: grey;  
  text-align: right;  
  width: 23.4em;  
@@ -45,19 +54,34 @@ button{
  height: 87px;  
  border: 1px solid #097C9B; 
    
-   
-  
+     
 } 
 
 #logo{
     height: 60px;
     display: inline-block;
-    
+   
 }
 
 #mystry{
     width:174px;
+    background-color:  gainsboro;
+    
+ 
+}
+
+#same{
+    width: 8.2em;
     background-color: gainsboro;
+    color: orange;
+}
+
+
+    
+}
+
+#butt{
+    color:orange;
 }
 
 
@@ -65,10 +89,6 @@ button{
 #submit {
     
     width: 174px;
-    
+   
 }
-
-
-
   
-
