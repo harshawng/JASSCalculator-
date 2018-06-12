@@ -1,0 +1,95 @@
+
+body{  
+background: #5cb85c;  
+  
+  
+} 
+
+.calbody{   
+ padding: 10px;
+ min-width: 27em;  
+ max-width: 27em; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+ 
+ 
+}
+ 
+
+
+h5{  
+ text-align: center;  
+ 
+ 
+   
+}  
+
+h6{
+    text-align: right;
+}
+
+#output{  
+ color: grey;  
+ text-align: right;  
+ width: 23.4em;  
+ height: 50px;  
+ font-size: 15px;  
+   
+}  
+
+#result{  
+ color: grey;  
+ text-align: right;  
+ width: 23.4em;  
+ height: 50px;  
+ font-size: 15px;  
+   
+}  
+  
+button{  
+ background-color: #fff;  
+ width: 85px;  
+ height: 87px;  
+ border: 1px solid #097C9B; 
+   
+     
+} 
+
+#logo{
+    height: 60px;
+    display: inline-block;
+   
+}
+
+#mystry{
+    width:174px;
+    background-color:  gainsboro;
+    
+ 
+}
+
+#same{
+    width: 8.2em;
+    background-color: gainsboro;
+    color: orange;
+}
+
+
+    
+}
+
+#butt{
+    color:orange;
+}
+
+
+
+#submit {
+    
+    width: 174px;
+   
+}
+  
+
